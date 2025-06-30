@@ -9,4 +9,4 @@ const GenreSchema = new Schema(
     versionKey: false,
   }
 );
-export const GenreModel = new model("genre", GenreSchema);
+export const GenreModel = model("genre", GenreSchema);

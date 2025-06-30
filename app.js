@@ -7,6 +7,7 @@ import { GenreModel } from "./Model/GenreSchema.js";
 
 import { AuthorRoutes } from "./Routes/AuthorRoutes.js";
 import bodyParser from "body-parser";
+import { GenreRoutes } from "./Routes/GenreRoutes.js";
 
 dotenv.config();
 const app = express();
@@ -20,3 +21,4 @@ mongoose.connect(process.env.DB_URI).then(() => {
   console.log("MongoDb elaqe quruldu");
 });
 app.use(url + "/authors", AuthorRoutes);
+app.use(url + "/genres", GenreRoutes);

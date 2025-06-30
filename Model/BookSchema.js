@@ -19,4 +19,4 @@ const BookSchema = new Schema(
     versionKey: false,
   }
 );
-export const BookModel = new model("book", BookSchema);
+export const BookModel = model("book", BookSchema);

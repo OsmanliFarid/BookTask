@@ -11,4 +11,4 @@ const AuthorSchema = new Schema(
     versionKey: false,
   }
 );
-export const AuthorModel = new model("author", AuthorSchema);
+export const AuthorModel = model("author", AuthorSchema);
