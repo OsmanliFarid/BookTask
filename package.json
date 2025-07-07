@@ -1,29 +1,25 @@
 {
-  "name": "booktask",
-  "version": "1.0.0",
-  "main": "app.js",
-  "type": "module",
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "start": "node --watch app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/OsmanliFarid/BookTask.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/OsmanliFarid/BookTask/issues"
-  },
-  "homepage": "https://github.com/OsmanliFarid/BookTask#readme",
-  "description": "",
   "dependencies": {
-    "body-parser": "^2.2.0",
-    "dotenv": "^17.0.0",
-    "express": "^5.1.0",
-    "mongodb": "^6.17.0",
-    "mongoose": "^8.16.1"
+    "axios": "^1.10.0",
+    "next": "15.3.5",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.5",
+    "tailwindcss": "^4"
   }
 }
