@@ -23,6 +23,7 @@ const Home = () => {
     <div className="p-4 grid grid-cols-2  gap-6">
       {Books.map((book) => {
         console.log(book);
+        console.log(book);
 
         const authorNames = book.author.map((authorId) => {
           const author = Authors.find((a) => a._id === authorId);
