@@ -2,6 +2,7 @@
 import { MdDelete } from "react-icons/md";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { BookAll } from "@/server/Controller/BookRoutes";
 const URL = "http://localhost:8080/api/v1";
 
 const Home = () => {
@@ -24,7 +25,8 @@ const Home = () => {
       {Books.map((book) => {
         console.log(book);
         console.log(book);
-
+        console.log(BookAll);
+        g;
         const authorNames = book.author.map((authorId) => {
           const author = Authors.find((a) => a._id === authorId);
           return author
