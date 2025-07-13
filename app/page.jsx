@@ -26,7 +26,7 @@ const Home = () => {
         console.log(book);
         console.log(book);
         console.log(BookAll);
-        g;
+
         const authorNames = book.author.map((authorId) => {
           const author = Authors.find((a) => a._id === authorId);
           return author
